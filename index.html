@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="QuakeOut Dev">
+    <meta name="description" content="A site where you can find out about me as a game developer under the name QuakeOut, see my best projects and contact me if necessary">
+    <meta name="keywords" content="QuakeOut, Games, Gamedev, Android, iOS, PC, company, Google Play, Unity">
+    <meta name="author" content="Maksym Filipyev">
+    <meta name="robots" content="index, follow">
+    <meta name="copyright" content=" 2023, QuakeOut Dev (Filipyev Maksym)" >
+    <meta name="language" content="en">
+    <title>QuakeOut Dev </title>
+    <link rel="icon" href="Resources/Icons/site-icon.png">
+    <link rel="stylesheet" href="css/site.css">
+    <script src="js/site.js"></script>
+    <title></title>
+</head>
+<body>
+    <header>
+        <img src='Resources/Icons/QOD Logo18.png' alt="Логотип студии">
+        <div class="right-buttons">
+            <div class="buttons-container">
+                <div class="right-nav-buttons">
+                    <a onclick="scrollToAbout()"> About me</a>
+                    <a onclick="scrollToGames()">Portfolio</a>
+                    <a onclick="scrollToContacts()">Contacts</a>
+                </div>
+                <div class="right-contact-buttons">
+                    <img src='Resources/Icons/youtube.png' alt="YouTube" onclick="openYouTube()">
+                    <img src='Resources/Icons/twitter.png' alt="Twitter" onclick="openTwitter()">
+                    <img src='Resources/Icons/facebook.png' alt="Facebook" onclick="openFacebook()">
+                </div>
+            </div>
+        </div>
+
+        <div class="open-nav-panel">
+            <img src= 'Resources/Icons/menu-burger.png' alt="Open Navigation Panel" onclick="openNavigationPanel()">
+        </div>
+        
+        <div class="navigation-panel">
+            <div class="close-button-container">
+                <img src='Resources/Icons/close.png' alt="Close Navigation Panel" onclick="closeNavigationPanel()">
+            </div>
+
+            <div class="navigation-buttons">
+                <a onclick="closeNavigationPanel(), scrollToAbout()"> About me</a>
+                <a onclick="closeNavigationPanel(), scrollToGames()">Portfolio</a>
+                <a onclick="closeNavigationPanel(), scrollToContacts()">Contacts</a>
+            </div>
+
+            <div class="contact-bottons">
+                <img src='Resources/Icons/youtube.png' alt="YouTube" onclick="openYouTube()">
+                <img src='Resources/Icons/twitter.png' alt="Twitter" onclick="openTwitter()">
+                <img src='Resources/Icons/facebook.png' alt="Facebook" onclick="openFacebook()">
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="company-slogan">
+            <div class="slogan-container">
+                <div class="slogan">
+                    <p>Striving for perfection in every line of code</p>
+                </div>
+                <div class="slogan-text">
+                    <p>At QuakeOut Dev, I not only create games, but also constantly learn and grow in the world of game development. </p>
+                    <p>My goal is to create exciting and high-quality gaming stories and worlds.</p>
+                </div>
+                <div class="slogan-button">
+                    <a onclick="scrollToAbout()">LEARN MORE</a>
+                </div>
+
+                <div class="video-block">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+
+                <div class="audio-block">
+                    <figure>
+                        <figcaption>In The Forest</figcaption>
+                        <audio controls src="Resources/Audio/in-the-forest.mp3"></audio>
+                        <a href="Resources/Audio/in-the-forest.mp3" target="_blank"> Download audio </a>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about">
+            <h1>About me</h1>
+            <div class="about-me">
+                <p>
+                    Our company is located in Ukraine. At QuakeOut Dev, I create mobile games that inspire and entertain our players.
+                    My approach to development is based on a deep understanding of audience needs and a constant desire to innovate.
+                    I pay special attention to design and user experience to ensure that each game is not only fun, but also easy to use.
+                </p>
+                <p>
+                    At QuakeOut Dev, I value creativity and am constantly looking for new ideas to improve our projects.
+                    My development process includes careful code architecture and good optimization to ensure high quality and satisfaction for our players.
+                    I strive to meet deadlines while doing everything I can to ensure the games bring joy and experience to our audience.
+                </p>
+                <div class="info-blocks">
+                    <div class="info-block">
+                        <img src="Resources/Icons/mobile-game.png" alt="Block image">
+                        <h3>Mobile Game Development</h3>
+                        <p>Develop all kinds of casual and educational games for iOS and Android mobile platforms using cutting-edge game engines and technologies.</p>
+                        <a onclick="scrollToGames()">LEARN MORE</a>
+                    </div>
+                    <div class="info-block">
+                        <img src="Resources/Icons/vr-glasses.png" alt="Block image">
+                        <h3>VR/AP Game Development</h3>
+                        <p>
+                            Develop modern VR & AR games and applications that are compatible with all existing gadgets.
+                            Experience a completely different level of entertainment!
+                        </p>
+                        <a onclick="scrollToGames()">LEARN MORE</a>
+                    </div>
+                    <div class="info-block">
+                        <img src="Resources/Icons/pc-game.png" alt="Block image">
+                        <h3>PC Game Development</h3>
+                        <p>Develop modern VR & AR games and applications that are compatible with all existing gadgets.</p>
+                        <a onclick="scrollToGames()">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="best-games">
+            <div class="container">
+                <h1>My Best Games</h1>
+                <div class="sliders">
+                    <div class="slider">
+                        <div class="slide active">
+                            <div class="image">
+                                <img src="Resources/Icons/Dreamland.png" alt="Image">
+                            </div>
+                            <div class="text">
+                                <h4>Dreamland</h4>
+                                <p>
+                                    Game, the essence of which is to discover all the territories and buildings on an unusual island,
+                                    which consists of several islands, with different seasons, connected to each other by paths and bridges.
+                                    They must be opened to the player with the help of resources that are mined by various mines or resource processors.
+                                </p>
+                                <ul>
+                                    <li>Platforms: <p>iOS, Android</p></li>
+                                    <li>Price: <p>5$</p></li>
+                                    <li>Rating: <p>5.0</p></li>
+                                </ul>
+                                <div class="buttons">
+                                    <img src='Resources/Icons/AppStore.png' alt="AppStore" onclick="openAppStore()">
+                                    <img src='Resources/Icons/GooglePlay.png' alt="GooglePlay" onclick="openGooglePlay()">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="image">
+                                <img src="Resources/Icons/QuickyCar.jpg" alt="Image">
+                            </div>
+                            <div class="text">
+                                <h4>Quicky Car - Car chase simulator</h4>
+                                <p>
+                                    Game, where your task is to dodge police cars, avoid collisions with obstacles, overcome difficult locations while keeping your car safe and sound.
+                                    The game has several cars and maps to choose from.
+                                </p>
+                                <ul>
+                                    <li>Platforms: <p>iOS, Android</p></li>
+                                    <li>Price: <p>2$</p></li>
+                                    <li>Rating: <p>4.9</p></li>
+                                </ul>
+                                <div class="buttons">
+                                    <img src='Resources/Icons/AppStore.png' alt="AppStore" onclick="openAppStore()">
+                                    <img src='Resources/Icons/GooglePlay.png' alt="GooglePlay" onclick="openGooglePlay()">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="image">
+                                <img src="Resources/Icons/Hole vs Food.jpg" alt="Image" title="Game Image">
+                            </div>
+                            <div class="text">
+                                <h4>Hole vs Food</h4>
+                                <p>
+                                    HoleVsFood is a fun arcade game where you control a hungry hole eating food! Your task is to manage the hole
+                                    and eat a variety of food located on each level. But be careful, there are bombs next to the food, because of
+                                    which you will lose your progress on the level. Designed for PC and mobile devices.
+                                </p>
+                                <ul>
+                                    <li>Platforms: <p>iOS, Android, PC</p></li>
+                                    <li>Price: <p>Free</p></li>
+                                    <li>Rating: <p>4.8</p></li>
+                                </ul>
+                                <div class="buttons">
+                                    <img src='Resources/Icons/AppStore.png' alt="AppStore" onclick="openAppStore()">
+                                    <img src='Resources/Icons/GooglePlay.png' alt="GooglePlay" onclick="openGooglePlay()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="dots">
+                    <li class="dot active" onclick="goToGameSlide(0)"></li>
+                    <li class="dot" onclick="goToGameSlide(1)"></li>
+                    <li class="dot" onclick="goToGameSlide(2)"></li>
+                </ul>
+
+                <div class="prev"> <img src="Resources/Icons/left-arrow.png" alt="Previous" onclick="prevGameSlide()"> </div>
+                <div class="next"> <img src="Resources/Icons/right-arrow.png" alt="Next" onclick="nextGameSlide()"> </div>
+
+            </div>
+        </section>
+
+        <section id="all-games">
+            <div class="all-my-games">
+                <h1>My All Games</h1>
+                <p>In this table you can see a list of all created and completed projects under my pseudonym as a game developer, QuakeOut. </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Genre</th>
+                            <th>Year of Creation</th>
+                            <th>Platforms</th>
+                            <th>Link To GitHub</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Fly Chick</td>
+                            <td>HyperCasual, Arcada, Runner</td>
+                            <td>2022</td>
+                            <td>Android, iOS</td>
+                            <td><a href="https://github.com" target="_blank">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Helix Jump</td>
+                            <td>HyperCasual, Arcada</td>
+                            <td>2022</td>
+                            <td>Android, iOS</td>
+                            <td><a href="https://github.com" target="_blank">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Walking Zombie</td>
+                            <td>Shooter, Singleplay</td>
+                            <td>2022</td>
+                            <td>PC, Android, iOS</td>
+                            <td><a href="https://github.com" target="_blank">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Cube Surfer</td>
+                            <td>HyperCasual, Runner</td>
+                            <td>2023</td>
+                            <td>Android, iOS</td>
+                            <td><a href="https://github.com target=" _blank"">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Join Clash</td>
+                            <td>HyperCasual, Runner</td>
+                            <td>2023</td>
+                            <td>Android, iOS</td>
+                            <td><a href="https://github.com target=" _blank"">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Hole Vs Food</td>
+                            <td>HyperCasual</td>
+                            <td>2023</td>
+                            <td>Android, iOS</td>
+                            <td><a href="https://github.com target=" _blank"">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Quicky Car</td>
+                            <td>Racing, HyperCasual</td>
+                            <td>2023</td>
+                            <td>Android, iOS</td>
+                            <td><a href="https://github.com/FMaksym/FantasyFarm" target="_blank">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dreamdale</td>
+                            <td>HyperCasual, Roleplay, Fantasy</td>
+                            <td>2023</td>
+                            <td>Android, iOS</td>
+                            <td><a href="https://github.com/FMaksym/FantasyFarm" target="_blank">Link</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="team-member">
+            <div class="team-container">
+                <h1>OUR TEAM</h1>
+                <div class="team">
+                    <div class="members">
+                        <div class="member">
+                            <div class="member-image">
+                                <img src="Resources/Icons/proud.png" alt="Member Image">
+                            </div>
+                            <div class="member-text">
+                                <h5>Filipyev Maksym</h5>
+                                <p>
+                                    Developer
+                                </p>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-image">
+                                <img src="Resources/Icons/hi.png" alt="Member Image">
+                            </div>
+                            <div class="member-text">
+                                <h5>Filipyev Maksym</h5>
+                                <p>
+                                    Game Designer
+                                </p>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-image">
+                                <img src="Resources/Icons/happy.png" alt="Member Image">
+                            </div>
+                            <div class="member-text">
+                                <h5>Filipyev Maksym</h5>
+                                <p>
+                                    Art Designer
+                                </p>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-image">
+                                <img src="Resources/Icons/shocked.png" alt="Member Image">
+                            </div>
+                            <div class="member-text">
+                                <h5>Filipyev Maksym</h5>
+                                <p>
+                                    Artist
+                                </p>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-image">
+                                <img src="Resources/Icons/peace.png" alt="Member Image">
+                            </div>
+                            <div class="member-text">
+                                <h5>Filipyev Maksym</h5>
+                                <p>
+                                    Good Guy
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prev-member"> <img src="Resources/Icons/left-arrow.png" alt="Previous" onclick="prevTeamSlide()"> </div>
+                <div class="next-member"> <img src="Resources/Icons/right-arrow.png" alt="Next" onclick="nextTeamSlide()"> </div>
+            </div>
+
+        </section>
+
+        <section id="gmail-contact">
+            <div class="gmail-contact">
+                <div class="contact-slogan">
+                    <p>Let's Create Something Great!</p>
+                </div>
+                <div class="contact-text">
+                    <p>
+                        Think you could give a good idea for a game? Or do you have any questions or wishes?
+                        Contact us and we will discuss the details.
+                    </p>
+                </div>
+
+                <div class="contact-forms"> 
+                    <form name="contacts" method="POST" action="/functions/submitForm">
+                        <!-- Ім'я -->
+                        <label for="name">Ім'я (обов'язково):</label>
+                        <input type="text" id="name" name="name" required pattern="[A-Za-zА-Яа-я]{2,}" title="Ім'я має містити щонайменше 2 літери і не може містити цифри або символи">
+                        <br><br>
+
+                        <!-- Назва Компанії -->
+                        <label for="company">Назва Компанії (необов'язково):</label>
+                        <input type="text" id="company" name="company">
+                        <br><br>
+
+                        <!-- Пошта -->
+                        <label for="email">Електрона пошта (обов'язково):</label>
+                        <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z]{2,}\.[a-zA-Z]{2,}" title="Будь ласка, введіть дійсну адресу електронної пошти">
+                        <br><br>
+
+                        <!-- Номер телефону -->
+                        <label for="phone">Контактний номер (обов'язково):</label>
+                        <input type="tel" id="phone" name="phone" required pattern="\+[0-9]{10,15}" title="Номер повинен починатися з + і містити від 10 до 15 цифр">
+                        <br><br>
+
+                        <!-- Опис замовлення -->
+                        <label for="order_description">Опис замовлення (обов'язково):</label>
+                        <textarea id="order_description" name="order_description" maxlength="1000" placeholder="Опишіть ваше замовлення та побажання тут (до 1000 символів)" required></textarea>
+                        <br><br>
+
+                        <!-- Кнопка відправки -->
+                        <input type="submit" value="Відправити">
+                    </form>
+                </div>
+
+                <!--<div class="contact-button">
+                    <a onclick="openGmail()">CONTACTS</a>
+                </div>-->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="footer">
+
+            <div id="button-to-top">
+                <img src="Resources/Icons/up-arrow.png" alt="ToUp" onclick ="scrollToHeader()" title="Go to up">
+            </div>
+
+            <div class="footer">
+                <div class="footer-top">
+                    <div class="footer-media">
+                        <img src='Resources/Icons/QOD Logo18.png' alt="Логотип студии">
+                        <p>I develop games of different genres under my own brand.</p>
+
+                        <div class="contact-buttons">
+                            <img src='Resources/Icons/youtube.png' alt="YouTube" onclick="openYouTube()">
+                            <img src='Resources/Icons/twitter.png' alt="Twitter" onclick="openTwitter()">
+                            <img src='Resources/Icons/facebook.png' alt="Facebook" onclick="openFacebook()">
+                            <img src='Resources/Icons/github.png' alt="GitHub" onclick="openGitHub()">
+                            <img src='Resources/Icons/linkedin.png' alt="LinkedIn" onclick="openLinkedIn()">
+                            <img src='Resources/Icons/notion.png' alt="LinkedIn" onclick="openNotion()">
+                        </div>
+                    </div>
+                    <div class="footer-navigation">
+                        <ul>
+                            <p>Our Games</p>
+                            <li><a onclick="scrollToAllGames()">All Games</a></li>
+                            <li><a onclick="scrollToGames()">Dreamland</a></li>
+                            <li><a onclick="scrollToGames()">Quicky Car</a></li>
+                            <li><a onclick="scrollToGames()">Hole vs Food</a></li>
+                        </ul>
+
+                        <ul>
+                            <p>Navigation</p>
+                            <li><a onclick="scrollToAbout()">About me</a></li>
+                            <li><a onclick="scrollToGames()">My Games</a></li>
+                            <li><a onclick="scrollToTeamMember()">Our Team</a></li>
+                            <li><a onclick="scrollToContacts()">Contacts with me</a></li>
+                        </ul>
+
+                        <ul>
+                            <p>Contacts</p>
+                            <li><a onclick="openYouTube()">YouTube</a></li>
+                            <li><a onclick="openFacebook()">Facebook</a></li>
+                            <li><a onclick="openTwitter()">Twitter</a></li>
+                            <li><a onclick="openLinkedIn()">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>Created by QuakeOut | All rights Reserved</p>
+                    <p>Phone: +380 (11) 111 11 11 | Email: quakeout@gmail.com</p>
+                </div>
+
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1002 @@
+﻿body {
+    justify-content:center;
+    font-family: Comic Sans MS;
+    background-image: url('../Resources/Background/Site Background 2.png');
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    font-family: Tahoma;
+    padding: 50px 0;
+}
+
+/*-----HEADER-----*/
+header {
+    font-family: Comic Sans MS;
+    color: #000000;
+    display: flex;
+    padding: 20px 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+header img{
+    margin-right: 25px;
+    width: 120px;
+    height: 120px;
+}
+
+.open-nav-panel {
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+}
+
+.open-nav-panel img{
+    width: 100%;
+    height: 100%;
+}
+
+.open-nav-panel img:hover {
+    opacity: 0.8;
+}
+    /*-----BUTTONS-----*/
+.right-buttons {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+@media (max-width: 770px) {
+    .right-buttons {
+        display: none;
+    }
+
+    .open-nav-panel {
+        display: block;
+    }
+}
+
+@media (min-width: 771px) {
+    .right-buttons {
+        display: flex;
+    }
+
+    .open-nav-panel {
+        display: none;
+    }
+}
+
+.right-buttons .buttons-container {
+    display: flex;
+    align-items: center;
+}
+        
+.right-nav-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-nav-buttons a {
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-right: 15px;
+    background-color: #fffa89;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+}
+
+.right-nav-buttons a:hover {
+    background-color: #ffd53d;
+    color: #000000;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+        
+.right-contact-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-contact-buttons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+}
+
+.right-contact-buttons img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.navigation-panel {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #001a68;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-panel.active {
+    display: flex;
+}
+
+.close-button-container {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 40px;
+    height: 40px;
+}
+
+.close-button-container img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+}
+
+.navigation-buttons {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-panel .navigation-buttons a {
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-bottom: 15px;
+    background-color: #fffa89;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+}
+
+.navigation-panel .navigation-buttons a:hover {
+    background-color: #ffd53d;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.navigation-panel img:hover {
+    opacity: 0.8;
+}
+
+.contact-bottons{
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-panel .contact-bottons img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+}
+
+.navigation-panel .contact-bottons img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+/*-----MAIN-----*/
+
+main {
+    padding: 0px 10%;
+}
+
+h1 {
+    font-family: Comic Sans MS;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fffa89;
+    text-align: center;
+}
+    /*-----SLOGAN-----*/
+
+.slogan-text {
+    margin-top: 20px;
+}
+
+.slogan-button {
+    margin: 50px auto;
+}
+
+.slogan-text p {
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fffa89;
+    text-align: justify;
+    width: 600px;
+}
+
+.slogan-button a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #19ca6d;
+    padding: 20px 30px;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.slogan-container a:hover {
+    background-color: #16b963;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.slogan p {
+    font-family: Comic Sans MS;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 55px;
+    color: #fffa89;
+    text-align: inherit;
+    display: block;
+    width: 700px;
+    margin-bottom: 20px;
+}
+
+.video-block {
+    justify-content: center;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.video-block iframe {
+    border-radius: 15px;
+    display: block;
+    width: 100%;
+    height: 540px;
+    border: none;
+}
+
+.audio-block figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+    background-color: #ab78fe;
+    border-radius: 15px;
+}
+
+.audio-block figure figcaption {
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    font-size: 24px;
+    color: #f0e68c;
+}
+
+.audio-block figure audio {
+    margin: 10px auto;
+    width: 80%;
+}
+
+.audio-block figure a {
+    font-family: Comic Sans MS;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: #56cfff;
+    text-decoration: underline;
+    background-color: #0a2e88;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.audio-block figure a:hover {
+    color: #fff;
+    background-color: #0f48d4;
+    transform: scale(1.1);
+}
+
+
+    /*-----ABOUT ME-----*/
+.about-me p {
+    color: #fffa89;
+    font-family: Comic Sans MS;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    width: 700px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.info-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.info-block {
+    max-width: 350px;
+    min-width: 200px;
+    width: 350px;
+    height: 500px;
+    background-color: #001a68;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.info-block img {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 115px;
+    margin-right: 115px;
+    object-fit: cover;
+}
+
+.info-block h3 {
+    color: #fff;
+    font-family: Comic Sans MS;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.info-block p {
+    max-width: 250px;
+    min-width: 100px;
+    width: 250px;
+    height: 180px;
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0px;
+    margin-bottom: 5px;
+}
+
+.info-block a {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #19ca6d;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-left: 95px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.info-block a:hover {
+    background-color: #16b963;
+    color: #fff;
+}
+
+    /*-----Best Games-----*/
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 5px 0px;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.container .sliders {
+    width: 80%;
+    min-width: 50%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 20px;
+    transform: translateX(12.5%);
+}
+
+.slider {
+    display: flex;
+    width: 300%; 
+    height: 100%;
+    background-color: #001a68;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 33.33%;
+    height: 100%;
+    background-color: #001a68;
+}
+
+.slide .image {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.image img {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.slide .text {
+    width: 48%;
+    height: 100%;
+    float: inline-end;
+}
+
+.text h4 {
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    font-size: 28px;
+    font-weight: bold;
+    color: #19ca6d;
+    width: 85%;
+    text-align: center;
+}
+
+.text p {
+    width: 85%;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+}
+
+.text ul {
+    width: 85%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.text li {
+    font-family: Comic Sans MS;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: khaki;
+    margin-bottom: 10px;
+}
+
+.text li p {
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(185, 185, 185);
+    margin: 2px 5px;
+}
+
+.text .buttons img {
+    width: 30%;
+    height: 30%;
+    cursor: pointer;
+}
+
+.container .dots {
+    position: absolute;
+    margin-top: 50px;
+    right: 50%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.container .dot {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.dot.active {
+    background-color: #000;
+}
+
+
+.container .next {
+    position: absolute;
+    top: 50%; 
+    right: 0px;
+    margin-left: 25px;
+    width: 60px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .prev {
+    position: absolute;
+    top: 50%; 
+    left: 0px;
+    margin-right: 25px;
+    width: 60px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .prev img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .next img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide.active {
+    transform: translateX(0);
+}
+
+/*-----ALL GAMES-----*/
+.all-my-games p {
+    color: #fffa89;
+    font-family: Comic Sans MS;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    width: 75%;
+    min-width: 40%;
+    margin: 0 auto;
+}
+
+.all-my-games table {
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #75bff6;
+}
+
+.all-my-games th, td {
+    font-family: Comic Sans MS;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.all-my-games th {
+    background-color: #0072ff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.all-my-games td {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.all-my-games td a {
+    text-decoration: none;
+    color: #0a00ff;
+}
+
+.all-my-games td a:hover {
+    color: #000;
+}
+
+/*-----TEAM MEMBER-----*/
+
+.team-container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.team {
+    width: 67.5%;
+    min-width: 50%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 20px;
+    transform: translateX(23.5%);
+}
+
+.members {
+    width: 200%;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.member {
+    height: 100%;
+    width: 300px;
+    padding: 0 16px;
+    padding-left: 17px;
+    padding-right: 16px;
+}
+
+.member .member-image{
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 25px;
+    border-color: #fffbd2;
+}
+
+.member .member-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.member .member-text h5{
+    font-family: Comic Sans MS;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffce00;
+    margin: 5px auto;
+    margin-top: 25px;
+}
+
+.member .member-text p{
+    font-family: Comic Sans MS;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffce00aa;
+    margin: 5px auto;
+}
+
+.team-container .next-member {
+    position: absolute;
+    top: 50%; 
+    right: 120px;
+    margin-left: 25px;
+    width: 60px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.team-container .prev-member {
+    position: absolute;
+    top: 50%; 
+    left: 120px;
+    margin-right: 25px;
+    width: 60px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.team-container .prev-member img{
+    width: 100%;
+    height: 100%;
+}
+
+.team-container .next-member img{
+    width: 100%;
+    height: 100%;
+}
+
+/*-----GMAIL CONTACT-----*/
+.gmail-contact {
+    justify-content: center;
+}
+
+.contact-slogan {
+    width: auto;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.contact-button {
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+.contact-slogan p {
+    font-family: Comic Sans MS;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 95%;
+    color: #fffa89;
+    text-align: center;
+    display: block;
+    width: 600px;
+    margin: 50px auto;
+}
+
+.contact-text p {
+    display: flex;
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fffa89;
+    text-align: center;
+    width: 550px;
+    margin: 5px auto;
+}
+
+.contact-button a {
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #19ca6d;
+    padding: 20px 30px;
+    border-radius: 15px;
+    margin-left: 35%;
+    margin-right: 35%;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.gmail-contact a:hover {
+    background-color: #16b963;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.contact-forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.contact-forms form {
+    max-width: 900px; /* Максимальная ширина формы */
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background: #b647f1;
+}
+
+.contact-forms form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: calc(60% - 22px); /* 70% ширины экрана минус отступы */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: Comic Sans MS;
+}
+
+.contact-forms form textarea {
+    width: calc(70% - 22px); /* 70% ширины экрана минус отступы */
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Comic Sans MS;
+    resize: none; /* Отключение возможности изменения размера */
+    overflow-y: auto; /* Добавление вертикальной прокрутки */
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Зелёный цвет кнопки */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Comic Sans MS;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    input[type="submit"]:hover {
+        background-color: #45a049; /* Тёмно-зелёный цвет при наведении */
+    }
+
+
+/*-----FOTTER-----*/
+
+footer {
+    padding: 0px 10%;
+}
+
+#button-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+    z-index: 100; /* Позиционируем кнопку поверх всех элементов */
+}
+
+#button-to-top.active {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#button-to-top:hover {
+    transform: scale(1.1);
+    filter: brightness(0.9);
+}
+
+#button-to-top img {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+@media (max-width: 770px) {
+    #button-to-top {
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+.footer-top {
+    display: flex;
+}
+
+.footer-top .footer-media {
+    padding-right: 10%;
+    max-width: 40%;
+}
+
+.footer-top .footer-media img{
+    width: 120px;
+    height: 120px;
+}
+
+.footer-top .footer-media p{
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fffa89;
+    margin-top: 30px;
+}
+
+.footer-top .footer-media .contact-buttons {
+    justify-content: start;
+    top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-top .footer-media .contact-buttons img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+}
+
+.footer-top .footer-media .contact-buttons img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.footer-top .footer-navigation {
+    justify-content: flex-end;
+    display: flex;
+    padding-left: 10%;
+    flex-grow: 1; 
+    max-width: 50%;
+}
+
+.footer-navigation ul{
+    align-items: start;
+    margin-right: 20px;
+}
+
+.footer-navigation ul p{
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fffa89;
+}
+
+.footer-navigation ul li {
+    margin-bottom: 10px;
+}
+
+.footer-navigation ul a {
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.footer-navigation ul a:hover {
+    color: #ffce00;
+}
+
+.footer-bottom {
+    display: flex;
+    margin-top: 30px;
+}
+
+.footer-bottom p{
+    font-family: Comic Sans MS;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fffa89;
+    margin-right: 25px;
+}
+
+a {
+    font-family: Comic Sans MS;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+img {
+    width: 200px;
+}
+
+#contacts {
+    font-family: Comic Sans MS;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
